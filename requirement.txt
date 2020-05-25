@@ -1,0 +1,6 @@
+flask
+flask-cors
+board
+adafruit-blinka
+RPI.GPIO
+adafruit_fingerprint
