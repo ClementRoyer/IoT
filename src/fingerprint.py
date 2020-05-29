@@ -7,13 +7,8 @@ import adafruit_fingerprint
 led = DigitalInOut(board.D13)
 led.direction = Direction.OUTPUT
 
-# If using with a computer such as Linux/RaspberryPi, Mac, Windows with USB/serial converter:
 import serial
 uart = serial.Serial("/dev/ttyUSB0", baudrate=57600, timeout=1)
-
-# If using with Linux/Raspberry Pi and hardware UART:
-#import serial
-#uart = serial.Serial("/dev/ttyS0", baudrate=57600, timeout=1)
 
 finger = adafruit_fingerprint.AdafruitFingerprint(uart)
 
